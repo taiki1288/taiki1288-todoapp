@@ -1,0 +1,15 @@
+@import 'header';
+@import 'tabs';
+@import 'variables';
+@import 'card';
+
+
+body {
+  height: 100%;
+  color: $text-base-color;
+}
+
+.container {
+  //   padding: 16px 16px;
+  width: 100%;
+}

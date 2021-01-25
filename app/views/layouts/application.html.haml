@@ -7,9 +7,13 @@
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+
   %body
     %header.header
-      %h1 Boards
-    %p.notice= notice
-    %p.alert= alert
+      .pageTitle Boards
+      .line
+
+    -# %p.notice= notice
+    -# %p.alert= alert
     = yield
