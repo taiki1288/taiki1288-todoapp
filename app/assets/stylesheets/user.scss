@@ -1,0 +1,27 @@
+@import './variables';
+
+.container {
+    margin: 0 26px;
+    margin-top: 33px;
+
+    .title {
+        height: 36px;
+        margin-bottom: 33px;
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 36px;
+        color: #000000;   
+    }
+    
+    .text {
+        width: 362px;
+        height: 40px;
+        background: #F4F4F4;
+        border-radius: 10px;
+        margin-bottom: 33px;
+        margin-top: 4px;
+    }
+}
+
