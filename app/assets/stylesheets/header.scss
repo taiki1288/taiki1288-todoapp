@@ -1,10 +1,26 @@
 @import './variables';
 
 $avatar-size: 40px;
+$header-padding-y: 16px;
+$back-icon-size: 16px;
 
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        color: $primary-color;
+        text-decoration: none;
+        margin-right: 10px;
+        &:hover {
+          opacity: 0.7;
+        }
+    }
+   
     .pageTitle {
         width: 56px;
         height: 25px;
+        margin-right: 266px;
         margin-left: 30px;
         margin-top: 17px;
         margin-bottom: 16px;
@@ -15,11 +31,31 @@ $avatar-size: 40px;
         line-height: 25px;
     }
 
-    .line {
-        width: 100%;
-        height: 1px;
-        margin-top: 16px;
-        background: #000000;
-        mix-blend-mode: normal;
-        opacity: 0.1;
-    } 
+    .header_avatar {
+        width: $avatar-size;
+        height: $avatar-size;
+        border-radius: 100%;
+        margin-top: 10px;
+        margin-right: 22px;
+        margin-bottom: 8px;
+      }
+    
+    
+      &_loginBtn {
+        height: $avatar-size;
+        border-radius: 8px;
+        margin-top: 17px;
+        font-size: 12px;
+      }
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0px;
+    top: 58px;
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+}
