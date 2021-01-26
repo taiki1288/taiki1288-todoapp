@@ -7,9 +7,20 @@
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+
   %body
     %header.header
-      %h1 Boards
-    %p.notice= notice
-    %p.alert= alert
+      %p.pageTitle Boards
+      - if user_signed_in?
+        .dropdown
+          = image_tag 'user-image.png', class: 'header_avatar dropbtn'
+          .dropdown-content
+            = link_to 'ログアウト' , destroy_user_session_path, data: { method: 'delete' }
+      - else
+        = link_to 'ログイン', new_user_session_path, class: 'header_loginBtn'
+      .line
+
+    -# %p.notice= notice
+    -# %p.alert= alert
     = yield
