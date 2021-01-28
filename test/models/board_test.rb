@@ -3,7 +3,7 @@
 # Table name: boards
 #
 #  id         :bigint           not null, primary key
-#  cotent     :text             not null
+#  content    :text             not null
 #  title      :string           not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null

@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2021_01_28_055559) do
   create_table "boards", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.string "title", null: false
-    t.text "cotent", null: false
+    t.text "content", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_boards_on_user_id"
