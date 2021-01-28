@@ -54,7 +54,16 @@
     
     .dropdown-content-boards a {
       display: block;
+      padding: 8px 16px;
+      text-decoration: none;
+      display: block;
+      color: $text-base-color;
+
+      &:hover{
+        opacity: 0.7;
+      }
     }
+    
     
     .dropdown-boards:hover .dropdown-content-boards {
       display: block;
@@ -82,6 +91,7 @@
   background: #FFFFFF;
   border: 1px dashed rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  
 
   p {
     position: relative;
