@@ -3,6 +3,8 @@
 @import 'user';
 @import 'buttons';
 @import 'common';
+@import 'card';
+@import 'newboard';
 
 
 // body {
@@ -15,4 +17,19 @@
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover{
+    color: $primary-color;
+    opacity: 0.7;
+  }
+}
+
+.container {
+  margin: 0 26px;
+  margin-top: 33px;
 }

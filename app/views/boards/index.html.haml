@@ -1,0 +1,15 @@
+.container
+  %h2.title All Boards
+  .card
+    %h3 Brackets
+    %p Saving money - is something we would all like.
+    .dropdown-boards
+    = image_tag 'menu.png', class: 'menubtn dropbtn-boards'
+    .dropdown-content-boards
+      %a{:href => "#"} Edit
+      %a{:href => "#"} Delete
+  .add_card
+    %p 
+      = link_to '+ Add new board', new_board_path
+
+
