@@ -1,4 +1,5 @@
 .container
+  %h2.title New Board
   = form_with(model: @board, url: boards_path, method: 'post', local: true) do |f|
     %div
       = f.label :title, 'Name'
