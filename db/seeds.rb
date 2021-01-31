@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 jon = User.create!(email: 'john@example.com', password: 'password')
-tarou = User.create!(emali: 'tarou@example.com', password: 'password')
+tarou = User.create!(email: 'tarou@example.com', password: 'password')
 
 5.times do
     jon.boards.create!(
