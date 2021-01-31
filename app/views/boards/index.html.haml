@@ -2,8 +2,8 @@
   %h2.title All Boards 
   - @boards.each do |board|
   .card
-    %h3 Brackets
-    %p Saving money - is something we would all like.
+    %h3= board.title
+    %p= board.content
     .dropdown-boards
     = image_tag 'menu.png', class: 'menubtn dropbtn-boards'
     .dropdown-content-boards
@@ -12,5 +12,3 @@
   .add_card
     %p 
       = link_to '+ Add new board', new_board_path
-
-
