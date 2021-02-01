@@ -1,14 +1,6 @@
 .container
   %h2.title All Boards 
   - @boards.each do |board|
-  .card
-    %h3= board.title
-    %p= board.content
-    .dropdown-boards
-    = image_tag 'menu.png', class: 'menubtn dropbtn-boards'
-    .dropdown-content-boards
-      %a{:href => "#"} Edit
-      %a{:href => "#"} Delete
   .add_card
     %p 
       = link_to '+ Add new board', new_board_path
