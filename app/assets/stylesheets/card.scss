@@ -28,53 +28,56 @@
     opacity: 0.4;
   }
 
-    .dropbtn-boards {
-        float: right;
-        margin-right: 16px;
-        margin-top: -39px;
-    }
+  .dropdown-boards {
+    // position: absolute;
+    // display: inline-block;
+    // left: 350px;
+    float: right;
+    margin-top: -50px;
+    margin-right: 16px;
+  }
+  
+  .menubtn {
+    width: 24px;
+    height: 6px;
+  }
 
-    .dropdown-boards {
-        position: relative;
-        display: inline-block;
-    }
+  .dropdown-content-boards {
+    position: absolute;
+    padding: 10px 20px 5px 10px;
+    line-height: 25px;
+    right: 0;
+    font-weight: normal;
+    font-size: 12px;
+    display: none;
+    border-radius: 10px;
+    background: #FFFFFF;
+    z-index: 10;
+  }
     
-    .dropdown-content-boards {
-      position: absolute;
-      padding: 10px 20px 5px 10px;
-      line-height: 25px;
-      right: 0;
-      font-weight: normal;
-      font-size: 12px;
-      display: none;
-      border-radius: 10px;
-      background: #FFFFFF;
-      z-index: 10;
-    }
-    
-    .dropdown-content-boards a {
-      display: block;
-      padding: 8px 16px;
-      text-decoration: none;
-      display: block;
-      color: $text-base-color;
+  .dropdown-content-boards a {
+    display: block;
+    // padding: 8px 16px;
+    // text-decoration: none;
+    // display: block;
+    // color: $text-base-color;
 
-      &:hover{
-        opacity: 0.7;
-      }
+    &:hover{
+      opacity: 0.7;
     }
+  }
     
     
-    .dropdown-boards:hover .dropdown-content-boards {
-      display: block;
-    }
+  .dropdown-boards:hover .dropdown-content-boards {
+    display: block;
+  }
 
-    .board-avatar {
-      width: 30px;
-      height: 30px;
-      margin-left: 20px;
-      margin-top: 40px;
-    }
+  .board-avatar {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
 
     // .name {
     //   font-size: 15px;
@@ -91,6 +94,7 @@
   background: #FFFFFF;
   border: 1px dashed rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  margin-bottom: 26px;
   
 
   p {
