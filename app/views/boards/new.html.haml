@@ -1,4 +1,5 @@
 .container
+  %h2.title New Board
   = form_with(model: @board, url: boards_path, method: 'post', local: true) do |f|
     %div
       = f.label :title, 'Name'
@@ -7,5 +8,5 @@
     %div
       = f.label :content, 'Description'
     %div
-      = f.text_field :content, class: 'description'
-    = f.submit 'Submit', class: 'btn-primary'
+      = f.text_area :content, class: 'description'
+  = f.submit 'Submit', class: 'btn-primary'
