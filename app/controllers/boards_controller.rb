@@ -3,11 +3,12 @@ class BoardsController < ApplicationController
         @boards = Board.all
     end
 
-    def new
-        @board = current_user.boards.build
+    def show
+       @board = Board.find(params[:id]) 
     end
 
-    def show
+    def new
+        @board = current_user.boards.build
     end
 
     def create

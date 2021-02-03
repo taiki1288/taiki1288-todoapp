@@ -1,0 +1,11 @@
+.container
+  %h2.title All Boards
+  .card
+    %h3= @board.title
+    %p= @board.content
+    .dropdown-boards
+      = image_tag 'menu.png', class: 'menubtn'
+      .dropdown-content-boards
+        %a{:href => "#"} Edit
+        %a{:href => "#"} Delete
+
