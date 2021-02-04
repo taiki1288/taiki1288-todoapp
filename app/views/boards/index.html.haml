@@ -4,11 +4,12 @@
     .card
       %h3= board.title
       %p= board.content
-      .dropdown-boards
-        = image_tag 'menu.png', class: 'menubtn'
-        .dropdown-content-boards
-          %a{:href => "#"} Edit
-          %a{:href => "#"} Delete
+      - if user_signed_in? && current_user.has_written?(board)
+        .dropdown-boards
+          = image_tag 'menu.png', class: 'menubtn'
+          .dropdown-content-boards
+            = link_to 'Edit', edit_board_path(board)
+            = link_to 'Delete', board_path(board), data: { method: 'delete', confirm: 'Are you sure you want me to delete it?' }
   .add_card
     %p 
       = link_to '+ Add new board', new_board_path 
