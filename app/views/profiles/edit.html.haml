@@ -3,6 +3,10 @@
     - @profile.errors.full_messages.each do |message|
       %li= message
   = form_with(model: @profile, url: profile_path, method: 'put', local: true) do |f|
+    %div 
+      = f.label :avatar, 'avatar'
+    %div 
+      = f.file_field :avatar
     %div
       = f.label :nickname, 'Name'
     %div
@@ -19,9 +23,9 @@
       = f.label :birthday, 'birthday'
     %div 
       = f.date_field :birthday, class: 'text'
-    %div 
-      = f.label :subscribed, 'Receive notifications'
-      = f.check_box :subscribed
+    -# %div 
+    -#   = f.label :subscribed, 'Receive notifications'
+    -#   = f.check_box :subscribed
 
     = f.submit 'Submit', class: 'btn-primary'
       

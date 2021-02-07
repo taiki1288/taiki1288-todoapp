@@ -4,7 +4,7 @@
     %h3= @board.title
     %p= @board.content
     %p.name= @board.author_name
-    = image_tag 'user2.png', class: 'board-avatar'
+    = image_tag @board.user.avatar_image , class: 'board-avatar'
     - if user_signed_in? && current_user.has_written?(@board)
       .dropdown-boards
         = image_tag 'menu.png', class: 'menubtn'
