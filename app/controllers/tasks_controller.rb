@@ -2,7 +2,7 @@ class TasksController < ApplicationController
     before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
     def show
-
+        @board = Board.find(params[:board_id])
     end
 
     def new
@@ -14,7 +14,7 @@ class TasksController < ApplicationController
         board = Board.find(params[:board_id])
         @task = board.tasks.build(task_params)
         if @task.save
-          redirect_to boards_path(@board)
+          redirect_to board_path(board)
         else
           render :new
         end
