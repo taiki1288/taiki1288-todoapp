@@ -17,8 +17,6 @@ class Board < ApplicationRecord
     has_one_attached :eyecatch
     has_many :tasks, dependent: :destroy
     belongs_to :user
-    validates :title, presence: true
-    validates :content, presence: true
 
     def author_name
         user.display_name

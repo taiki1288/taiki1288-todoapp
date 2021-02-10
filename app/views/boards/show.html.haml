@@ -2,8 +2,8 @@
   %h2.title= @board.title
   - @task.each do |task|
     .card
-      %h3= @task.title
-      %p= @task.content
+      %h3= task.title
+      %p= task.content
       %p.name= @board.author_name
       = image_tag @board.user.avatar_image , class: 'board-avatar'
       -# - if user_signed_in? && current_user.has_written?(@board)
