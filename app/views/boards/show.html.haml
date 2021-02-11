@@ -2,6 +2,9 @@
   %h2.title= @board.title
   - @task.each do |task|
     .card
+      - if task.eyecatch.attached?
+        .card_image
+          = image_tag task.eyecatch, class: 'task_image'
       %h3= task.title
       %p= task.content
       %p.name= @board.author_name
