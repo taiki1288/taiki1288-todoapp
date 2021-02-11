@@ -2,6 +2,10 @@
   %h2.title New Card
   = form_with(model: @task, url: board_tasks_path(@task.board), method: 'post', local: true) do |f|
     %div 
+      = f.label :eyecatch, 'eyecatch'
+    %div 
+      = f.file_field :eyecatch
+    %div 
       = f.label :title, 'title'
     %div 
       = f.text_field :title, class: 'text'
@@ -13,5 +17,5 @@
       = f.label :deadline, 'deadline'
     %div 
       = f.date_field :deadline, class: 'text'
-      
+
     = f.submit 'Submit', class: 'btn-primary'
