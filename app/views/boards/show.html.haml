@@ -7,8 +7,8 @@
           = image_tag task.eyecatch, class: 'task_image'
       %h3= task.title
       %p= task.content
-      %p.name= @board.author_name
-      = image_tag @board.user.avatar_image , class: 'board-avatar'
+      %h4= task.deadline
+      = image_tag task.user.avatar_image , class: 'board-avatar'
       -# - if user_signed_in? && current_user.has_written?(@board)
       -#   .dropdown-boards
       -#     = image_tag 'menu.png', class: 'menubtn'
