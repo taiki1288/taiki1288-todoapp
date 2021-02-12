@@ -1,0 +1,74 @@
+@import './variables';
+
+.title-show-task {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800px;
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.dropdown-task {
+  float: right;
+  margin-top: -30px;
+}
+
+.dropbtn-task {
+  position: relative;
+  border: none;
+  width: 24px;
+  height: 6px;
+  cursor: pointer;
+}
+
+  .dropdown-content-task {
+    position: absolute;
+    padding: 10px 20px 5px 10px;
+    line-height: 25px;
+    right: 0;
+    font-weight: normal;
+    font-size: 12px;
+    display: none;
+    border-radius: 10px;
+    background: #FFFFFF;
+    z-index: 10;
+    width: 66px;
+    height: 66px;
+  }
+
+  .dropdown-task:hover .dropdown-content-task {
+    display: block;
+  }
+
+  .dropdown-content-task a {
+    display: block;
+  }
+
+
+// .card-image {
+// }
+
+.task-show-image {
+  width: 100%;
+  margin-top: 32px;
+  border-radius: 8px;
+  margin-bottom: 35px;
+}
+
+.task-show-card {
+  width: 100%;
+  height: 217px;
+  left: 26px;
+  top: 364px;
+  background: #F4F4F4;
+  border-radius: 10px;
+
+  p {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 20px 15px;
+  }
+}

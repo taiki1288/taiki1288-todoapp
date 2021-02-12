@@ -12,14 +12,14 @@ tarou = User.create!(email: 'tarou@example.com', password: 'password')
 5.times do
     jon.boards.create!(
         title: Faker::Lorem.sentence(word_count: 3),
-        content: Faker::Lorem.sentence(word_count: 50)
+        content: Faker::Lorem.sentence(word_count: 10)
     )
 end
 
 5.times do
     tarou.boards.create!(
         title: Faker::Lorem.sentence(word_count: 3),
-        content: Faker::Lorem.sentence(word_count: 50)
+        content: Faker::Lorem.sentence(word_count: 10)
     )
 end
 
