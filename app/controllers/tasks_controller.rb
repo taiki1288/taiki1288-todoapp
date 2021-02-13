@@ -41,7 +41,7 @@ class TasksController < ApplicationController
       board = Board.find(params[:board_id])
       task = current_user.tasks.find(params[:id])
       task.destroy!
-      redirect_to board_task_path(board, task)
+      redirect_to board_path(board)
     end
 
     private
