@@ -1,6 +1,6 @@
 .container 
-  %h2.title New Task
-  = form_with(model: @task, url: board_tasks_path(@task.board), method: 'post', local: true) do |f|
+  %h2.title Edit Task
+  = form_with(model: @task, url: board_task_path(@task.board), method: 'put', local: true) do |f|
     %div 
       = f.label :eyecatch, 'eyecatch'
     %div 
