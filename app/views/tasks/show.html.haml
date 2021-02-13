@@ -1,0 +1,16 @@
+.container 
+  %h2.title-show-task= @task.title 
+  - if user_signed_in? && current_user.tasks.exists?(id: @task.id)
+    .dropdown-task 
+      = image_tag 'menu.png', class: 'dropbtn-task'
+      .dropdown-content-task
+        = link_to 'Edit', edit_board_task_path(@board, @task)
+        = link_to 'Delete', board_task_path(@board, @task), data: { method: 'delete', confirm: 'Are you sure you want me to delete it?' }
+
+  .card-image 
+    - if @task.eyecatch.attached?
+      = image_tag @task.eyecatch, class: 'task-show-image'
+    .task-show-card 
+      %p= @task.content 
+      %p= @task.deadline 
+.comment-title Comment

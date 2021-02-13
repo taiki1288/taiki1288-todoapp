@@ -1,24 +1,24 @@
 # == Schema Information
 #
-# Table name: boards
+# Table name: tasks
 #
 #  id         :bigint           not null, primary key
 #  content    :text             not null
+#  deadline   :date             not null
 #  title      :string           not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  board_id   :bigint           not null
 #  user_id    :bigint           not null
 #
 # Indexes
 #
-#  index_boards_on_user_id  (user_id)
+#  index_tasks_on_board_id  (board_id)
+#  index_tasks_on_user_id   (user_id)
 #
-class Board < ApplicationRecord
+class Task < ApplicationRecord
     has_one_attached :eyecatch
-    has_many :tasks, dependent: :destroy
-    belongs_to :user
 
-    def author_name
-        user.display_name
-    end
+    belongs_to :user
+    belongs_to :board
 end

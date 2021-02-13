@@ -1,0 +1,164 @@
+2021-02-12 07:49:07.360 JST [10898] FATAL:  lock file "postmaster.pid" already exists
+2021-02-12 07:49:07.360 JST [10898] HINT:  Is another postmaster (PID 10888) running in data directory "/usr/local/var/postgres"?
+2021-02-12 07:50:06.943 JST [11067] LOG:  starting PostgreSQL 13.1 on x86_64-apple-darwin20.1.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.27), 64-bit
+2021-02-12 07:50:06.944 JST [11067] LOG:  listening on IPv6 address "::1", port 5432
+2021-02-12 07:50:06.944 JST [11067] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-02-12 07:50:06.944 JST [11067] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2021-02-12 07:50:06.949 JST [11068] LOG:  database system was shut down at 2021-02-12 07:49:30 JST
+2021-02-12 07:50:06.957 JST [11067] LOG:  database system is ready to accept connections
+2021-02-12 07:50:29.753 JST [11080] FATAL:  lock file "postmaster.pid" already exists
+2021-02-12 07:50:29.753 JST [11080] HINT:  Is another postmaster (PID 11067) running in data directory "/usr/local/var/postgres"?
+2021-02-12 07:51:06.961 JST [11067] LOG:  could not open file "postmaster.pid": No such file or directory
+2021-02-12 07:51:06.961 JST [11067] LOG:  performing immediate shutdown because data directory lock file is invalid
+2021-02-12 07:51:06.961 JST [11067] LOG:  received immediate shutdown request
+2021-02-12 07:51:06.961 JST [11067] LOG:  could not open file "postmaster.pid": No such file or directory
+2021-02-12 07:51:06.961 JST [11072] WARNING:  terminating connection because of crash of another server process
+2021-02-12 07:51:06.961 JST [11072] DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2021-02-12 07:51:06.961 JST [11072] HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2021-02-12 07:51:06.963 JST [11073] LOG:  could not open temporary statistics file "pg_stat/global.tmp": No such file or directory
+2021-02-12 07:51:06.964 JST [11067] LOG:  database system is shut down
+2021-02-12 07:51:40.562 JST [11266] FATAL:  lock file "postmaster.pid" already exists
+2021-02-12 07:51:40.562 JST [11266] HINT:  Is another postmaster (PID 11255) running in data directory "/usr/local/var/postgres"?
+2021-02-12 07:51:59.697 JST [11429] LOG:  starting PostgreSQL 13.1 on x86_64-apple-darwin20.1.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.27), 64-bit
+2021-02-12 07:51:59.698 JST [11429] LOG:  listening on IPv6 address "::1", port 5432
+2021-02-12 07:51:59.698 JST [11429] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-02-12 07:51:59.698 JST [11429] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2021-02-12 07:51:59.702 JST [11430] LOG:  database system was shut down at 2021-02-12 07:51:50 JST
+2021-02-12 07:51:59.716 JST [11429] LOG:  database system is ready to accept connections
+2021-02-12 07:53:07.493 JST [11464] FATAL:  database "todo_app_development" does not exist
+2021-02-12 07:53:19.880 JST [11466] FATAL:  database "todo_app_development" does not exist
+2021-02-12 07:53:24.677 JST [11467] FATAL:  database "todo_app_development" does not exist
+2021-02-12 07:53:25.822 JST [11468] FATAL:  database "todo_app_development" does not exist
+2021-02-12 07:53:28.040 JST [11469] FATAL:  database "todo_app_development" does not exist
+2021-02-12 07:53:52.528 JST [11502] FATAL:  database "todo_app_development" does not exist
+2021-02-12 09:45:48.362 JST [17485] ERROR:  database "todo_app_development" is being accessed by other users
+2021-02-12 09:45:48.362 JST [17485] DETAIL:  There are 2 other sessions using the database.
+2021-02-12 09:45:48.362 JST [17485] STATEMENT:  DROP DATABASE IF EXISTS "todo_app_development"
+2021-02-12 09:46:01.171 JST [17510] ERROR:  database "todo_app_development" is being accessed by other users
+2021-02-12 09:46:01.171 JST [17510] DETAIL:  There are 2 other sessions using the database.
+2021-02-12 09:46:01.171 JST [17510] STATEMENT:  DROP DATABASE IF EXISTS "todo_app_development"
+2021-02-12 15:09:01.304 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:02.004 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:02.004 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:02.707 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:02.708 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:03.412 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:03.412 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:04.114 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:04.114 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:04.814 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:04.814 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:05.517 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:05.517 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:06.219 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:06.219 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:06.920 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:06.921 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:07.621 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:07.621 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:08.323 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:08.323 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:09.026 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:09.026 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:09.730 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:09.730 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:10.434 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:10.434 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:11.137 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:11.137 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:11.839 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:11.839 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:12.277 JST [11434] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-02-12 15:09:12.278 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:12.278 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:12.979 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:12.980 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:13.683 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:13.683 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:14.389 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:14.389 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:15.093 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:15.093 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:15.795 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:15.795 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:16.496 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:16.497 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:17.202 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:17.202 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:17.904 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:17.904 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:18.603 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:18.604 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:19.306 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:19.306 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:20.009 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:20.009 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:20.712 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:20.712 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:21.413 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:21.413 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:22.116 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:22.116 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:22.816 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:22.816 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:23.256 JST [11434] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-02-12 15:09:23.256 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:23.256 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:23.959 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:23.959 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:24.664 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:24.664 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:25.367 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:25.370 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:26.071 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:26.071 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:26.587 JST [18088] LOG:  starting PostgreSQL 13.1 on x86_64-apple-darwin20.1.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.27), 64-bit
+2021-02-12 15:09:26.588 JST [18088] LOG:  could not bind IPv6 address "::1": Address already in use
+2021-02-12 15:09:26.588 JST [18088] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2021-02-12 15:09:26.588 JST [18088] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2021-02-12 15:09:26.588 JST [18088] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2021-02-12 15:09:26.588 JST [18088] WARNING:  could not create listen socket for "localhost"
+2021-02-12 15:09:26.588 JST [18088] FATAL:  could not create any TCP/IP sockets
+2021-02-12 15:09:26.588 JST [18088] LOG:  database system is shut down
+2021-02-12 15:09:26.776 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:26.777 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:27.480 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:27.480 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:28.184 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:28.184 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:28.888 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:28.888 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:29.592 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:29.592 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:30.296 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:30.296 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:31.000 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:31.000 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:31.705 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:31.705 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:32.410 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:32.410 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:33.113 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:33.113 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:33.818 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:33.818 JST [11435] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2021-02-12 15:09:34.259 JST [11434] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-02-12 15:09:41.241 JST [11429] LOG:  could not open file "postmaster.pid": No such file or directory
+2021-02-12 15:09:41.242 JST [11429] LOG:  performing immediate shutdown because data directory lock file is invalid
+2021-02-12 15:09:41.243 JST [11429] LOG:  received immediate shutdown request
+2021-02-12 15:09:41.243 JST [11429] LOG:  could not open file "postmaster.pid": No such file or directory
+2021-02-12 15:09:41.249 JST [11434] WARNING:  terminating connection because of crash of another server process
+2021-02-12 15:09:41.249 JST [11434] DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2021-02-12 15:09:41.249 JST [11434] HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2021-02-12 15:09:41.251 JST [11435] LOG:  could not open temporary statistics file "pg_stat/global.tmp": No such file or directory
+2021-02-12 15:09:41.261 JST [11429] LOG:  database system is shut down
+2021-02-12 15:09:43.352 JST [18247] LOG:  starting PostgreSQL 13.1 on x86_64-apple-darwin20.1.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.27), 64-bit
+2021-02-12 15:09:43.353 JST [18247] LOG:  listening on IPv6 address "::1", port 5432
+2021-02-12 15:09:43.353 JST [18247] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-02-12 15:09:43.354 JST [18247] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2021-02-12 15:09:43.357 JST [18248] LOG:  database system was shut down at 2021-02-12 15:09:09 JST
+2021-02-12 15:09:43.365 JST [18247] LOG:  database system is ready to accept connections
+2021-02-12 15:10:27.452 JST [18285] FATAL:  database "todo_app_development" does not exist
+2021-02-13 09:59:20.288 JST [37627] ERROR:  null value in column "deadline" of relation "tasks" violates not-null constraint
+2021-02-13 09:59:20.288 JST [37627] DETAIL:  Failing row contains (3, 3, 11, これはタスクですよ, タスクだよ１, null, 2021-02-13 00:59:20.280056, 2021-02-13 00:59:20.280056).
+2021-02-13 09:59:20.288 JST [37627] STATEMENT:  INSERT INTO "tasks" ("user_id", "board_id", "title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"
