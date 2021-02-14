@@ -21,4 +21,7 @@ class Task < ApplicationRecord
     has_many :comments, dependent: :destroy
     belongs_to :user
     belongs_to :board
+    validates :title, presence: true
+    validates :content, presence: true
+    validates :period, presence: true
 end
