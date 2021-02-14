@@ -13,4 +13,13 @@
     .task-show-card 
       %p= @task.content 
       %p= @task.deadline 
-.comment-title Comment
+
+  .comment-title Comment
+  - @comment.each do |comment|
+    .task-comment 
+      = image_tag comment.user.avatar_image, class: 'board-avatar'
+      %p= comment.content
+  .card-comment 
+    %p= link_to '+ Add new comment', new_board_task_comment_path(@board, @task)
+
+ 

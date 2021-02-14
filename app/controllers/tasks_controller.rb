@@ -4,6 +4,7 @@ class TasksController < ApplicationController
     def show
         @board = Board.find(params[:board_id])
         @task = Task.find(params[:id])
+        @comment = @task.comments
     end
 
     def new
@@ -31,7 +32,7 @@ class TasksController < ApplicationController
       @board = Board.find(params[:board_id])
       @task = current_user.tasks.find(params[:id])
       if @task.update(task_params)
-        redirect_to board_task_path(@task, @board)
+        redirect_to board_task_path(@board, @task)
       else
         render :edit
       end
