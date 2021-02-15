@@ -23,5 +23,5 @@ class Task < ApplicationRecord
     belongs_to :board
     validates :title, presence: true
     validates :content, presence: true
-    validates :period, presence: true
+    validates :deadline, presence: true
 end
